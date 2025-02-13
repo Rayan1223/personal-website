@@ -77,6 +77,13 @@ section {
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+/* MAKE JUST THE h1 IN #about A FANCY CURSIVE FONT */
+#about h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
 /* SECTION HEADINGS */
 section h2 {
     margin-bottom: 20px;
