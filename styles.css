@@ -23,6 +23,7 @@
     opacity: 0;
     animation: slideInLeft 1s ease-in-out forwards;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left;
 }
 
 /* Staggered Animations */
@@ -33,7 +34,7 @@
 /* Timeline Content */
 .timeline-content h3 {
     color: #ff6b6b;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 5px;
 }
 
@@ -46,4 +47,16 @@
 .timeline-item:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Company Name */
+.timeline-content strong {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Date Styling */
+.timeline-content p:nth-child(2) {
+    font-weight: bold;
+    color: #cccccc;
 }
