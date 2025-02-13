@@ -110,7 +110,8 @@ section h2 {
 .skills-container {
     margin: 20px auto;
     max-width: 800px;
-    text-align: left;
+    text-align: center;
+    /* Centering the title and options */
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s ease-in-out forwards;
@@ -123,6 +124,8 @@ section h2 {
     margin: 10px 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    /* Centering the skill items */
     gap: 10px;
 }
 
