@@ -117,8 +117,8 @@ section {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
-/* PROJECTS */
-.project {
+/* Experience */
+.experience {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
@@ -131,7 +131,7 @@ section {
 }
 
 /* Hover Effect */
-.project:hover {
+.experience:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
 }
