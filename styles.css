@@ -26,6 +26,7 @@ header {
     align-items: center;
 }
 
+/* NAVIGATION */
 nav ul {
     list-style: none;
     padding: 0;
@@ -49,10 +50,15 @@ nav ul li a:hover {
 }
 
 /* SOCIAL ICONS */
+.social-icons {
+    margin-right: 20px;
+    /* Add a little spacing on the right */
+}
+
 .social-icons a {
     color: white;
-    margin: 0 10px;
-    font-size: 1.5rem;
+    margin: 0 8px;
+    font-size: 1.4rem;
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -84,6 +90,19 @@ section h2 {
     margin: 0 auto;
 }
 
+/* PROFILE PICTURE */
+.profile-pic {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #fff;
+}
+
 /* EDUCATION, EXPERIENCE, PROJECTS */
 .education-item,
 .experience-item,
@@ -104,6 +123,18 @@ section h2 {
 .experience-item h3,
 .project-item h3 {
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between text and logo */
+}
+
+/* Inline logos for schools/companies */
+.inline-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    /* or "scale-down" */
 }
 
 /* SKILLS SECTION */
@@ -111,7 +142,6 @@ section h2 {
     margin: 20px auto;
     max-width: 800px;
     text-align: center;
-    /* Centering the title and options */
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s ease-in-out forwards;
@@ -125,11 +155,14 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* Centering the skill items */
+    /* Center skill items */
     gap: 10px;
 }
 
 .skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     background: rgba(255, 255, 255, 0.1);
     padding: 8px 12px;
     border-radius: 5px;
@@ -140,6 +173,13 @@ section h2 {
 .skills-list li:hover {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Skill logos */
+.skill-logo {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
 }
 
 /* FOOTER */
