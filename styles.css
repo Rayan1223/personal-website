@@ -1,6 +1,6 @@
 /* GENERAL STYLES */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #121212;
     color: white;
     margin: 0;
@@ -9,48 +9,10 @@ body {
     /* Prevents horizontal scroll */
 }
 
-/* FADE-IN ANIMATION */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* SLIDE-IN ANIMATION */
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 /* HEADER */
 header {
     background: #1e1e1e;
-    padding: 15px;
+    padding: 15px 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -58,9 +20,16 @@ header {
     animation: fadeIn 1s ease-in-out;
 }
 
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -79,68 +48,120 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* SOCIAL ICONS */
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff6b6b;
+    transform: scale(1.2);
+}
+
 /* SECTIONS */
 section {
-    padding: 100px 20px;
+    padding: 120px 20px 60px;
+    /* extra top padding to offset fixed header */
     min-height: 100vh;
     opacity: 0;
+    transform: translateY(20px);
     animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* SKILLS SECTION */
-.skills-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    max-width: 70%;
+/* SECTION HEADINGS */
+section h2 {
+    margin-bottom: 20px;
 }
 
-/* Skill Boxes */
-.skills-list li {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 12px 18px;
-    border-radius: 8px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+/* ABOUT SECTION */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-/* Hover Effect */
-.skills-list li:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-}
-
-/* Experience */
-.experience {
+/* EDUCATION, EXPERIENCE, PROJECTS */
+.education-item,
+.experience-item,
+.project-item {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
-    max-width: 60%;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 800px;
+    text-align: left;
     opacity: 0;
+    transform: translateY(20px);
     animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 0.8s;
+    animation-delay: 0.5s;
 }
 
-/* Hover Effect for Experience */
-.experience:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+.education-item h3,
+.experience-item h3,
+.project-item h3 {
+    margin-top: 0;
 }
 
-/* CONTACT */
-#contact p {
-    font-size: 18px;
+/* SKILLS SECTION */
+.skills-container {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 12px;
+    border-radius: 5px;
     font-weight: bold;
-    opacity: 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills-list li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 20px;
+    background: #1e1e1e;
     animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 1.2s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -2,92 +2,210 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayan Ansari | Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Rayan Ansari | Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://github.com/Rayan1223" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/rayan-ansari" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:rayanansari124@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
     </header>
 
     <!-- ABOUT SECTION -->
     <section id="about">
-        <h1>Hi, I'm Rayan Ansari</h1>
-        <p>I'm a Computer Engineering student at TMU with a passion for software development.</p>
+        <h1>Hello, I'm Muhammad Rayan Ansari</h1>
+        <p>
+            I am a passionate and driven Computer Engineering student at Toronto Metropolitan University, specializing
+            in Software. With a keen interest in innovative software development and a commitment to excellence, I
+            thrive in challenging environments and continuously strive to push the boundaries of technology. I enjoy
+            collaborating with diverse teams to bring creative projects to life, and I am always eager to learn and
+            adopt new skills. Welcome to my personal website where you can explore my journey, projects, and
+            professional experiences.
+        </p>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Toronto Metropolitan University (formerly Ryerson)</h3>
+            <p>Bachelor of Engineering in Computer, Specializing in Software</p>
+            <span>Toronto, ON | Sep. 2023 – May. 2028</span>
+        </div>
+        <div class="education-item">
+            <h3>Bishop Reding Catholic Secondary School</h3>
+            <p>Ontario Secondary School Diploma (OSSD)</p>
+            <span>Milton, ON</span>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Full Stack Developer</h3>
+            <p>
+                <strong>Carib Farms</strong> | Remote (Canada) • December 2024 – April 2025
+            </p>
+            <p>
+                Collaborated with a web development team via Git to design and develop a web application, enhancing user
+                engagement and functionality while fostering seamless teamwork and code integrity. Enhanced user
+                experience by developing interactive features using JavaScript frameworks such as React.js, Vue.js, and
+                Livewire, leading to an 11.4% increase in user interactions over 2 months. Integrated external services
+                through APIs to extend application capabilities, and utilized Linux and MySQL to support prototype
+                production releases via VPS, ensuring efficient data storage and retrieval.
+            </p>
+        </div>
+        <div class="experience-item">
+            <h3>Assistant Manager</h3>
+            <p>
+                <strong>Brooks Brothers</strong> | Halton Hills, ON • April 2024 – September 2024
+            </p>
+            <p>
+                Provided personalized customer service by measuring and tailoring suits and pants to precise
+                specifications, which increased sales by over 81%. Assisted with daily operations such as
+                opening/closing the store, handling cash deposits, and maintaining a clean environment that led to
+                recurring customers. Explored innovative techniques and tools to craft and repair suits.
+            </p>
+        </div>
+        <div class="experience-item">
+            <h3>Freelance IT Assistant</h3>
+            <p>
+                <strong>Freelance</strong> • (Various Locations) • Ongoing
+            </p>
+            <p>
+                Provided IT support and troubleshooting for clients, successfully resolving over 95% of issues remotely
+                and ensuring minimal downtime.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>CubeLoop</h3>
+            <p>
+                Developed in a group of 3 using Visual Studio, C++, and Python. Created a Geometry Dash dupe with
+                dynamic object movements and flying enemies. Utilized object-oriented programming to split the game into
+                UI, movement/interaction, and animation classes, and visualized GitHub data to showcase team
+                collaboration.
+            </p>
+        </div>
+        <div class="project-item">
+            <h3>Central Processing Unit (CPU)</h3>
+            <p>
+                Designed and implemented a functional CPU using Quartus, VHDL, and FPGA technologies. Integrated an ALU,
+                FSM, and decoders, while incorporating Student ID based inputs for dynamic simulation of operations.
+                Displayed real-time results on a 7-segment FPGA board for verification.
+            </p>
+        </div>
     </section>
 
     <!-- SKILLS SECTION -->
     <section id="skills">
         <h2>Technical Skills</h2>
-        <ul class="skills-list">
-            <li>Java</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>C</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>MySQL</li>
-            <li>Flask</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>VS Code</li>
-            <li>IntelliJ</li>
-            <li>Eclipse</li>
-            <li>NetBeans</li>
-            <li>Arduino</li>
-            <li>Matplotlib</li>
-            <li>Linux</li>
-            <li>Qt</li>
-        </ul>
+        <div class="skills-container">
+            <h3>Languages</h3>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>Python</li>
+                <li>C/C++</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>HTML/CSS</li>
+                <li>JScript</li>
+            </ul>
+        </div>
+        <div class="skills-container">
+            <h3>Frameworks</h3>
+            <ul class="skills-list">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Junit</li>
+                <li>MYSQL</li>
+                <li>Flask</li>
+            </ul>
+        </div>
+        <div class="skills-container">
+            <h3>Developer Tools</h3>
+            <ul class="skills-list">
+                <li>GitHub</li>
+                <li>MS Excel</li>
+                <li>CAD</li>
+                <li>MS PowerPoint</li>
+                <li>Arduino</li>
+                <li>Tinkercad</li>
+                <li>VS Code</li>
+                <li>MS Word</li>
+                <li>IntelliJ</li>
+                <li>Eclipse</li>
+            </ul>
+        </div>
+        <div class="skills-container">
+            <h3>Libraries & Others</h3>
+            <ul class="skills-list">
+                <li>GIT</li>
+                <li>NumPy</li>
+                <li>Matplotlib</li>
+                <li>Quartus</li>
+                <li>NetBeans</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience">
-        <h2>Work Experience</h2>
+    <!-- FOOTER / FAREWELL MESSAGE -->
+    <footer>
+        <p>Thank you for visiting my personal website. Have a great day!</p>
+    </footer>
 
-        <div class="experience">
-            <h3>Software Developer Intern</h3>
-            <p><strong>Carib Farms</strong> • May 2024 - Present</p>
-            <p>Developed a full-stack web platform to optimize agricultural supply chains, integrating Laravel and
-                MySQL.</p>
-        </div>
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Animate Sections on Scroll
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll("header, section, footer");
+            window.addEventListener("scroll", () => {
+                elements.forEach((el) => {
+                    let position = el.getBoundingClientRect().top;
+                    let screenHeight = window.innerHeight / 1.3;
+                    if (position < screenHeight) {
+                        el.style.opacity = "1";
+                        el.style.transform = "translateY(0)";
+                    }
+                });
+            });
+        });
 
-        <div class="experience">
-            <h3>Research Assistant</h3>
-            <p><strong>TMU Engineering Department</strong> • Sep 2023 - Apr 2024</p>
-            <p>Conducted software simulations for circuit analysis, improving efficiency by 30% using MATLAB and Python.
-            </p>
-        </div>
-
-        <div class="experience">
-            <h3>Technical Support Associate</h3>
-            <p><strong>Freelance</strong> • 2021 - 2023</p>
-            <p>Provided IT support and troubleshooting for clients, resolving over 95% of issues remotely.</p>
-        </div>
-
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: rayan.ansari@example.com</p>
-        <p>LinkedIn: linkedin.com/in/rayanansari</p>
-    </section>
-
+        // GSAP Animations
+        gsap.from("header", { opacity: 0, y: -50, duration: 1 });
+        gsap.from("h1", { opacity: 0, y: -50, duration: 1, delay: 0.2 });
+        gsap.from("nav ul li", { opacity: 0, y: -20, stagger: 0.2, delay: 0.3 });
+        gsap.from(".social-icons a", { opacity: 0, y: -20, stagger: 0.2, delay: 0.3 });
+        gsap.from("section", { opacity: 0, y: 50, stagger: 0.3, duration: 1, delay: 0.5 });
+        gsap.from("footer", { opacity: 0, y: 50, duration: 1, delay: 0.7 });
+    </script>
 </body>
 
 </html>
