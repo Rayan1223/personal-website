@@ -10,40 +10,38 @@
     margin-right: auto;
 }
 
-/* Fixing Skill Card Layout */
+/* Skill Card */
 .skill {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    /* Makes all skills equal size */
-    height: 120px;
-    /* Square shape */
+    width: 100px;
+    /* Keeps all skills uniform */
+    height: 100px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     padding: 10px;
 }
 
-/* Fixing SVG Icons */
+/* Fixing Icon Sizes */
 .skill img {
-    width: 50px !important;
-    /* Ensures ALL icons are the same size */
-    height: 50px !important;
-    /* Overrides any default sizes */
+    width: 60px !important;
+    /* Enforces a fixed size */
+    height: 60px !important;
     object-fit: contain;
-    /* Prevents weird stretching */
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     filter: grayscale(50%);
-    transition: filter 0.3s ease-in-out;
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 /* Skill Text */
 .skill p {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
+    text-align: center;
 }
 
 /* Hover Animation */
@@ -54,4 +52,5 @@
 
 .skill:hover img {
     filter: grayscale(0%);
+    transform: scale(1.1);
 }
