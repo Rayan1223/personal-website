@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // GSAP Animation
-gsap.from("h1", { opacity: 0, y: -50, duration: 1 });
+gsap.from("h1", { opacity: 0, y: -49, duration: 1 });  
 gsap.from("nav ul li", { opacity: 0, y: -20, stagger: 0.2 });
 gsap.from("section", { opacity: 0, y: 50, stagger: 0.3, duration: 1 });
